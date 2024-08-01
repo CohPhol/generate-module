@@ -1,0 +1,35 @@
+{
+    "name": "root/generate-module",
+    "description": "Generate Modules",
+    "type": "library",
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "Root\\GenerateModule\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Paul Bryan Co",
+            "email": "paulteves353@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Root\\GenerateModule\\GenerateModuleServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.1",
+        "nwidart/laravel-modules": "^10.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    },
+    "version": "1.0.0"
+}
